@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="randomvar:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="randomvar.war">
+      <element id="artifact" artifact-name="randomvar:war exploded" />
+    </root>
+  </artifact>
+</component>
