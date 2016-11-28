@@ -38,7 +38,7 @@ public class HomeController {
 			StringBuilder str = new StringBuilder();
 			str.append("['Кластер','Вхождения'],");
 			for(Map.Entry e: rnums.getNumbers().entrySet()){
-				str.append("['Кластер: "+e.getKey()+"',"+e.getValue()+"],");
+				str.append("['"+e.getKey()+"',"+e.getValue()+"],");
 			}
 
 			map.put(rnums.getClass().toString().replace("class edu.randomvar.mvc.service.impl.","")+rnd.indexOf(rnums),str);

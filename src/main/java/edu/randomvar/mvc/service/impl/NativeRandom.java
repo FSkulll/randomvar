@@ -2,9 +2,7 @@ package edu.randomvar.mvc.service.impl;
 
 import edu.randomvar.mvc.service.GenerateNumbers;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by FSkul on 29.10.2016.
@@ -12,17 +10,20 @@ import java.util.Random;
 public class NativeRandom implements GenerateNumbers {
 
     private int n = 10000;
+    private Random random;
 
     @Override
-    public Map<String, Integer> getNumbers() {
-        Random random = new Random();
-        Map<String, Integer> map = new HashMap<String, Integer>();
-        map.put("1",random.nextInt());
-        map.put("2",random.nextInt());
-        map.put("3",random.nextInt());
-        map.put("4",random.nextInt());
-        map.put("Не еба",random.nextInt());
-        return map;
+    public Map<Double, Integer> getNumbers() {
+        random = new Random();
+        Map<Double, Integer> map = new HashMap<Double, Integer>();
+        for(int i = 0; i < n; i++){
+            Double key = Math.random();
+            key = Math.round(key* Math.pow(10,1))/Math.pow(10,1);
+            Integer temp = map.get(key);
+            map.put(key, temp == null ? 1 : temp + 1);
+        }
+        SortedMap<Double, Integer> test = new TreeMap<Double, Integer>(map);
+        return test;
     }
 
     @Override

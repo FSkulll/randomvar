@@ -5,7 +5,7 @@ import java.util.Map;
 public interface GenerateNumbers {
 
     //return generated random numbers
-    Map<String, Integer> getNumbers();
+    Map<Double, Integer> getNumbers();
 
     //generate random numbers
     void generateSet(int n);
