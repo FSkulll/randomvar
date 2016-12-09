@@ -100,10 +100,10 @@
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
         function drawChart() {
-            var data1 = google.visualization.arrayToDataTable([${NativeRandom0}]);
-            var data2 = google.visualization.arrayToDataTable([${NativeRandom1}]);
-            var data3 = google.visualization.arrayToDataTable([${NativeRandom2}]);
-            var data4 = google.visualization.arrayToDataTable([${NativeRandom3}]);
+            var data1 = google.visualization.arrayToDataTable([${method0}]);
+            var data2 = google.visualization.arrayToDataTable([${method1}]);
+            var data3 = google.visualization.arrayToDataTable([${method2}]);
+            var data4 = google.visualization.arrayToDataTable([${method3}]);
             var options = {
                 bar: {groupWidth: "100%"},
                 legend: {position:"none"}

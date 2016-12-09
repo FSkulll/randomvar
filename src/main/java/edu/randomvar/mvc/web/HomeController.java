@@ -2,7 +2,10 @@ package edu.randomvar.mvc.web;
 
 
 import edu.randomvar.mvc.service.*;
+import edu.randomvar.mvc.service.impl.MedianSquaresMethod;
+import edu.randomvar.mvc.service.impl.MonteCarlo;
 import edu.randomvar.mvc.service.impl.NativeRandom;
+import edu.randomvar.mvc.service.impl.ShakeMethod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,6 +31,9 @@ public class HomeController {
 		rnd.add(new NativeRandom());
 		rnd.add(new NativeRandom());
 		rnd.add(new NativeRandom());
+//		rnd.add(new MedianSquaresMethod());
+//		rnd.add(new ShakeMethod());
+//		rnd.add(new MonteCarlo());
 	}
 
 
@@ -41,7 +47,7 @@ public class HomeController {
 				str.append("['"+e.getKey()+"',"+e.getValue()+"],");
 			}
 
-			map.put(rnums.getClass().toString().replace("class edu.randomvar.mvc.service.impl.","")+rnd.indexOf(rnums),str);
+			map.put("method"+rnd.indexOf(rnums),str);
 		}
 
 		map.put("temp",rnd.get(0).getN());
