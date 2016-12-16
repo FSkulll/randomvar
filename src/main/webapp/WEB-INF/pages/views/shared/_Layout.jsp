@@ -107,25 +107,25 @@
             var options = {
                 bar: {groupWidth: "100%"},
                 legend: {position:"none"},
-                title: "Мат. ожидание = ${m0}. Дисперсия = ${d0} "
+                title: "M = ${m0}. D = ${d0} "
 
             };
             var options2 = {
                 bar: {groupWidth: "100%"},
                 legend: {position:"none"},
-                title: "Мат. ожидание = ${m1}. Дисперсия = ${d1}"
+                title: "M = ${m1}. D = ${d1}"
 
             };
             var options3 = {
                 bar: {groupWidth: "100%"},
                 legend: {position:"none"},
-                title: "Мат. ожидание = ${m2}. Дисперсия = ${d2}"
+                title: "M = ${m2}. D = ${d2}"
 
             };
             var options4 = {
                 bar: {groupWidth: "100%"},
                 legend: {position:"none"},
-                title: "Мат. ожидание = ${m3}. Дисперсия = ${d3}"
+                title: "M = ${m3}. D = ${d3}"
 
             };
             var chart1 = new google.visualization.ColumnChart(document.getElementById('chart1'));

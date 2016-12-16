@@ -43,7 +43,7 @@ public class HomeController {
 
 		for(GenerateNumbers rnums: rnd){
 			StringBuilder str = new StringBuilder();
-			str.append("['Кластер','Вхождения'],");
+			str.append("['Claster','Input'],");
 			for(Map.Entry e: rnums.getNumbers().entrySet()){
 				str.append("['"+e.getKey()+"',"+e.getValue()+"],");
 			}
