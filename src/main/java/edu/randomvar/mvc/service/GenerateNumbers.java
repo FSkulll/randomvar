@@ -12,4 +12,8 @@ public interface GenerateNumbers {
 
     //return curr n value
     int getN();
+
+    Double getM();
+
+    Double getD();
 }

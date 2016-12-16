@@ -106,7 +106,26 @@
             var data4 = google.visualization.arrayToDataTable([${method3}]);
             var options = {
                 bar: {groupWidth: "100%"},
-                legend: {position:"none"}
+                legend: {position:"none"},
+                title: "Мат. ожидание = ${m0}. Дисперсия = ${d0} "
+
+            };
+            var options2 = {
+                bar: {groupWidth: "100%"},
+                legend: {position:"none"},
+                title: "Мат. ожидание = ${m1}. Дисперсия = ${d1}"
+
+            };
+            var options3 = {
+                bar: {groupWidth: "100%"},
+                legend: {position:"none"},
+                title: "Мат. ожидание = ${m2}. Дисперсия = ${d2}"
+
+            };
+            var options4 = {
+                bar: {groupWidth: "100%"},
+                legend: {position:"none"},
+                title: "Мат. ожидание = ${m3}. Дисперсия = ${d3}"
 
             };
             var chart1 = new google.visualization.ColumnChart(document.getElementById('chart1'));
@@ -114,9 +133,9 @@
             var chart3 = new google.visualization.ColumnChart(document.getElementById('chart3'));
             var chart4 = new google.visualization.ColumnChart(document.getElementById('chart4'));
             chart1.draw(data1, options);
-            chart2.draw(data2, options);
-            chart3.draw(data3, options);
-            chart4.draw(data4, options);
+            chart2.draw(data2, options2);
+            chart3.draw(data3, options3);
+            chart4.draw(data4, options4);
         }
     </script>
 

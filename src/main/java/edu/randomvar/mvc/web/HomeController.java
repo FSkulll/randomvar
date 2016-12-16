@@ -28,7 +28,8 @@ public class HomeController {
 	{
 		rnd = new ArrayList<GenerateNumbers>();
 		rnd.add(new NativeRandom());
-		rnd.add(new NativeRandom());
+		rnd.add(new MedianSquaresMethod());
+//		rnd.add(new NativeRandom());
 		rnd.add(new NativeRandom());
 		rnd.add(new NativeRandom());
 //		rnd.add(new MedianSquaresMethod());
@@ -48,6 +49,8 @@ public class HomeController {
 			}
 
 			map.put("method"+rnd.indexOf(rnums),str);
+			map.put("m"+rnd.indexOf(rnums),rnums.getM());
+			map.put("d"+rnd.indexOf(rnums),rnums.getD());
 		}
 
 		map.put("temp",rnd.get(0).getN());

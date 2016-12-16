@@ -38,4 +38,14 @@ public class MonteCarlo implements GenerateNumbers {
     public int getN() {
         return n;
     }
+
+    @Override
+    public Double getM() {
+        return null;
+    }
+
+    @Override
+    public Double getD() {
+        return null;
+    }
 }
