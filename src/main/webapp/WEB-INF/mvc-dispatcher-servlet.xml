@@ -49,8 +49,8 @@
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
         <property name="url" value="mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/randomvar" />
-        <property name="username" value="adminlLq7m2S" />
-        <property name="password" value="Yc9fzAK2ZDxJ" />
+        <property name="username" value="adminRTdT2XV" />
+        <property name="password" value="zastAuT4xtjQ" />
     </bean>
 
     <bean id="messageSource"
