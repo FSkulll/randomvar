@@ -18,16 +18,6 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="hibernate" name="Hibernate">
-      <configuration>
-        <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" value="b6856e1e-4354-44a4-8e72-f94bbb289801" />
-          <unit-entry name="sessionFactory" value="8ba29563-a982-478e-b9e9-7ca08d439493" />
-        </datasource-map>
-        <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate.cfg.xml" />
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
