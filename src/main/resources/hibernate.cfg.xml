@@ -5,12 +5,17 @@
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <!--<property name="connection.url">jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/randomvar</property>-->
+
+
     <property name="connection.url">jdbc:mysql://localhost:3306/random</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
+    <!--<property name="hibernate.connection.username">admin8DnQYCI</property>-->
+    <!--<property name="hibernate.connection.password">u8By5Xe7fjAw</property>-->
     <mapping class="edu.randomvar.mvc.domain.UserRoles"/>
     <mapping class="edu.randomvar.mvc.domain.Users"/>
      <!--DB schema will be updated if needed-->

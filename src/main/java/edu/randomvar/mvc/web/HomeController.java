@@ -28,8 +28,8 @@ public class HomeController {
 	{
 		rnd = new ArrayList<GenerateNumbers>();
 		rnd.add(new NativeRandom());
-		rnd.add(new MedianSquaresMethod());
-//		rnd.add(new NativeRandom());
+//		rnd.add(new MedianSquaresMethod());
+		rnd.add(new NativeRandom());
 		rnd.add(new NativeRandom());
 		rnd.add(new NativeRandom());
 //		rnd.add(new MedianSquaresMethod());
@@ -45,7 +45,7 @@ public class HomeController {
 			StringBuilder str = new StringBuilder();
 			str.append("['Claster','Input'],");
 			for(Map.Entry e: rnums.getNumbers().entrySet()){
-				str.append("['"+e.getKey()+"',"+e.getValue()+"],");
+				str.append("['"+e.getKey()+"-"+Math.round((Double.parseDouble(e.getKey().toString())+0.1)* Math.pow(10,1))/Math.pow(10,1)+"      "+"',"+e.getValue()+"],");
 			}
 
 			map.put("method"+rnd.indexOf(rnums),str);

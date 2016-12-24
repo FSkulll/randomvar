@@ -30,8 +30,8 @@
             min-height:60%;
             height:60%;
             padding: 5%;
-            /*background-color: limegreen;*/
-            background-image: url("/resources/images/new.jpeg");
+            background-color: limegreen;
+            /*background-image: url("/resources/images/new.jpeg");*/
             background-size: cover;
         }
         #login {
@@ -58,7 +58,7 @@
         .sect {
             border: 1px dotted green;
             height: 100%;
-            padding: 1em;
+            padding: 2em;
         }
 
         #login h1 {
@@ -105,27 +105,40 @@
             var data3 = google.visualization.arrayToDataTable([${method2}]);
             var data4 = google.visualization.arrayToDataTable([${method3}]);
             var options = {
-                bar: {groupWidth: "100%"},
+                bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m0}. D = ${d0} "
+                title: "M = ${m0}. D = ${d0} ",
+                vAxis: {
+                    minValue: 0
+                }
 
             };
             var options2 = {
-                bar: {groupWidth: "100%"},
+                bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m1}. D = ${d1}"
+                title: "M = ${m1}. D = ${d1}",
+                vAxis: {
+                    minValue: 0
+                }
 
             };
             var options3 = {
-                bar: {groupWidth: "100%"},
+                bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m2}. D = ${d2}"
+                title: "M = ${m2}. D = ${d2}",
+                vAxis: {
+                    minValue: 0
+                }
+
 
             };
             var options4 = {
-                bar: {groupWidth: "100%"},
+                bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m3}. D = ${d3}"
+                title: "M = ${m3}. D = ${d3}",
+                vAxis: {
+                    minValue: 0
+                }
 
             };
             var chart1 = new google.visualization.ColumnChart(document.getElementById('chart1'));

@@ -12,16 +12,20 @@ public class NativeRandom implements GenerateNumbers {
     private int n = 10000;
     private Random random;
     private Double sum = 0.0;
+    private Double sum2 = 0.0;
 
     @Override
     public Map<Double, Integer> getNumbers() {
         random = new Random();
+        sum = 0.0;
+        sum2 = 0.0;
         Map<Double, Integer> map = new HashMap<Double, Integer>();
         for(int i = 0; i < n; i++){
             Double key = 0.0 + Math.random()*1.0;
-
             key = Math.round(key* Math.pow(10,1))/Math.pow(10,1);
+
             sum += key*0.1;
+            sum2 += Math.pow((key - 0.5),2);
             Integer temp = map.get(key);
             map.put(key, temp == null ? 1 : temp + 1);
 
@@ -67,9 +71,11 @@ public class NativeRandom implements GenerateNumbers {
 //                map.put(1.0, temp == null ? 1 : temp + 1);
 //            }
         }
+        map.put(0.0, map.get(0.0) + map.get(1.0));
+        map.remove(1.0);
 //        map.remove(0.0);
 //        map.remove(1.0);
-//        map.put(1.0, map.get(0.4));
+//        map.put(1.0, map.get(0.5));
 
         SortedMap<Double, Integer> test = new TreeMap<Double, Integer>(map);
         return test;
@@ -89,11 +95,11 @@ public class NativeRandom implements GenerateNumbers {
 
     @Override
     public Double getM() {
-        return sum;
+        return sum/(n/10);
     }
 
     @Override
     public Double getD() {
-        return sum;
+        return sum2/n;
     }
 }
