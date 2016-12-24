@@ -107,7 +107,7 @@
             var options = {
                 bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m0}. D = ${d0} ",
+                title: "Стандартный рандом   M = ${m0}. D = ${d0} ",
                 vAxis: {
                     minValue: 0
                 }
@@ -116,7 +116,7 @@
             var options2 = {
                 bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m1}. D = ${d1}",
+                title: "Метод Фон-Неймана    M = ${m1}. D = ${d1}",
                 vAxis: {
                     minValue: 0
                 }
@@ -125,7 +125,7 @@
             var options3 = {
                 bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m2}. D = ${d2}",
+                title: "Метод перемешивания  M = ${m2}. D = ${d2}",
                 vAxis: {
                     minValue: 0
                 }
@@ -135,7 +135,7 @@
             var options4 = {
                 bar: {groupWidth: "97%"},
                 legend: {position:"none"},
-                title: "M = ${m3}. D = ${d3}",
+                title: "Фихрь Мерсена        M = ${m3}. D = ${d3}",
                 vAxis: {
                     minValue: 0
                 }

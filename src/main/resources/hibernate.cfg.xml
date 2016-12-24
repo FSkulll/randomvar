@@ -6,12 +6,12 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="connection.url">jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/randoms</property>
+    <property name="connection.url">jdbc:mysql://127.11.176.130:3306/randoms</property>
 
 
     <!--<property name="connection.url">jdbc:mysql://localhost:3306/random</property>-->
-    <property name="hibernate.hbm2ddl.auto">update</property>
-    <property name="hibernate.show_sql">true</property>
+    <!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+    <!--<property name="hibernate.show_sql">true</property>-->
     <!--<property name="hibernate.connection.username">root</property>-->
     <!--<property name="hibernate.connection.password">root</property>-->
     <property name="hibernate.connection.username">adminZcDrchy</property>
