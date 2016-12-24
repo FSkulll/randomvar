@@ -22,9 +22,9 @@ http://www.springframework.org/schema/security/spring-security.xsd">
 
     <beans:bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <beans:property name="url" value="jdbc:mysql://localhost:3306/random" />
-        <beans:property name="username" value="root" />
-        <beans:property name="password" value="root" />
+        <beans:property name="url" value="jdbc:mysql://127.11.176.130:3306/randoms" />
+        <beans:property name="username" value="adminZcDrchy" />
+        <beans:property name="password" value="yN91x_BvFZLz" />
     </beans:bean>
 
        <authentication-manager>
