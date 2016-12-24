@@ -10,7 +10,7 @@
     <c:if test="${username != 'guest' && user != null && username != null}">
         <nav class="navbar navbar-default">
             <div class="container">
-                <form  action="/calculate" method="POST" class="navbar-form navbar-left">
+                <form  action="<c:url value="/calculate"/>" method="POST" class="navbar-form navbar-left">
                     <div class="form-group">
                         <input  type="number" name="str" class="form-control" value="${temp}"/>
                     </div>
