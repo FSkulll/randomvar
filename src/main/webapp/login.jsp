@@ -39,7 +39,7 @@
             </div>
         </form>
         <div id="register">
-            Если у вас нет аккаунта <a href="/register"><spring:message code="label.registernew" /></a>
+            Если у вас нет аккаунта <a href="<c:url value="/register"/>"><spring:message code="label.registernew" /></a>
         </div>
     </div>
 </div>
